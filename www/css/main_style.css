@@ -1,0 +1,205 @@
+*{
+margin: 0;
+padding: 0;    
+} 
+
+body{
+	min-width: 1000px;	
+	padding: 0px;
+	margin: 0px;   
+	background-color: #E2E2E2;
+	color: #47484B;
+	font-family: TimesNewRoman, 'Times New Roman';
+}
+
+#menu{
+	z-index: 2;
+	height: 60px;
+	width: 80%;
+	margin-left: 10%;
+	position:absolute;
+	background-color: #C0C0C0;
+	box-shadow: 
+		inset 0 -8px #1D1F21;
+
+}
+
+#menu a:hover{
+	color: red;
+}
+
+#naw_top{
+	width: 100%;
+	height: 100%;
+}
+
+#naw_top > li{
+	list-style-type: none;
+	font-size: 16px;
+	width: 25%;
+	float: left;	
+}
+
+#naw_top  ul li{
+	list-style-type: none;
+}
+
+#naw_top  ul{
+	position: absolute;
+	margin-top: -3px;
+	width: 25%;
+	background-color: #C0C0C0;
+ 	display: none;
+	box-shadow:	inset 0 -8px #1D1F21;
+}
+
+ #naw_top a{
+     text-decoration: none;
+	 display: block;
+     padding-top: 15px;
+	 padding-bottom: 15px;
+     color: #333;
+     text-align: center;
+     width: 100%; 
+	 font: bold italic 20px Verdana;
+}
+
+#osnova:after {
+    content: "";
+    display: table;
+    clear: both;
+}	
+
+
+#fuater{
+	background-color: #3A383E;
+	height: 250px;
+	min-width: 1000px;
+	box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.75);
+	padding-left: 5%;
+}
+#fuater h3{
+	color: #14181a;
+	text-shadow: 1px 1px 0 #3d3d3d;
+	font-style: italic;
+	font-size: 180%;
+	margin-top: 0;
+	display: block;
+	height: 35px;
+}
+.nav_f{
+	padding: 5%;
+	float: left;
+	}
+.nav_f a{
+	text-decoration: none;
+	color: white;
+	font-style: italic;
+}
+.nav_f a:hover{
+	color: blueviolet;
+}
+
+#sms{
+	display: none;
+	z-index: 12;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+}
+#crutch_sms{
+	width: 30%;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: rgba(2,82,108, 0.9); 
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+
+}
+#crutch_sms .text_input{
+	width: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 4px;
+    background-clip: padding-box; 
+    display:block;
+    font-family: sans-serif;
+    font-size:18px;
+    font-weight: 300;    
+    color:black;
+    padding-left:20px;
+    padding-right:20px;
+}
+#crutch_sms textarea{
+	width: 80%;	
+	margin-left: 5%;
+	margin-right: 5%;
+	background: rgba(255, 255, 255, 0.4); 
+	border: 1px solid rgba(255,255,255,.6);
+	border-radius: 4px;
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight: 300;
+    color:black;
+    padding-left:25px;
+    padding-right:20px;
+    padding-top:12px;
+    overflow:hidden;
+}
+#crutch_sms textarea:focus,#crutch_sms .text_input:focus{
+    background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden; 
+}
+#close_form{
+float: right;
+text-decoration: none;	
+margin-right: 3px;	
+color: #00C7F1;	
+}
+#close_form:hover{
+color: #3B65F1;
+}
+#submit_btn{
+    width: 138px;
+    height: 44px;
+    border-radius: 4px;
+	float:right;
+	margin-bottom: 5px;
+	margin-right: 17px;
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+	background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    border-radius: 6px;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+    color: #e1e1e1;	
+}
+#submit_btn:hover{
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+	background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    color: #fff;
+}
+#submit_btn:active{
+margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #333333;
+    background: #ffCC00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffCC00), to(#ff6600));
+    color: #fff;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+	outline: none;
+}

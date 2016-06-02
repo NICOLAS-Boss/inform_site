@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="css/news.css">	
+<h1 id="main_h">Архив статей: суперкары, легенды автомобильного мира.</h1>
+<div id="block">
+	<div class="statti">
+	<a href="#news1" id="news1">
+		<div id="img_1">
+		</div>
+		<p id="this_p1"></p></a>
+	</div>
+
+
+	<div class="statti left_s">
+	<a href="#news2" id="news2">
+		<div id="img_2">
+		</div>
+		<p id="this_p2"></p></a>
+	</div>
+
+	<div class="statti">
+	<a href="#news3" id="news3">
+		<div id="img_3">
+		</div>
+		<p id="this_p3"></p></a>
+	</div>
+	
+	<div class="statti left_s">
+	<a href="#news4" id="news4">
+		<div id="img_4">
+		</div>
+		<p id="this_p4"></p></a>
+	</div>	
+	<div class="statti">
+	<a href="#news5" id="news5">
+		<div id="img_5">
+		</div>
+		<p id="this_p5" ></p></a>
+	</div>	
+</div>
+
+<script>
+$('#img_1').load('page/news/page1/page1.html #f1');
+$('#this_p1').load('page/news/page1/page1.html #p1');	
+$('#img_2').load('page/news/page2/page2.html #f1');
+$('#this_p2').load('page/news/page2/page2.html #p1');	
+$('#img_3').load('page/news/page3/page3.html #f1');
+$('#this_p3').load('page/news/page3/page3.html #p1');
+$('#img_4').load('page/news/page4/page4.html #f1');
+$('#this_p4').load('page/news/page4/page4.html #p1');	
+$('#img_5').load('page/news/page5/page5.html #f1');
+$('#this_p5').load('page/news/page5/page5.html #p1');	
+
+//###################################################
+	
+$('#news1').click(function(eventObject){
+    $('#osnova').load('page/news/page1/page1.html');
+	window.history.pushState($(this).attr('href'), document.title, $(this).attr('href'));
+	eventObject.preventDefault();
+	
+});  
+$('#news2').click(function(eventObject){
+    $('#osnova').load('page/news/page2/page2.html');
+	window.history.pushState($(this).attr('href'), document.title, $(this).attr('href'));
+	eventObject.preventDefault();
+	
+}); 
+$('#news3').click(function(eventObject){
+    $('#osnova').load('page/news/page3/page3.html');
+	window.history.pushState($(this).attr('href'), document.title, $(this).attr('href'));
+	eventObject.preventDefault();
+	
+});  
+$('#news4').click(function(eventObject){
+    $('#osnova').load('page/news/page4/page4.html');
+	window.history.pushState($(this).attr('href'), document.title, $(this).attr('href'));
+	eventObject.preventDefault();
+	
+});	
+	
+$('#news5').click(function(eventObject){
+    $('#osnova').load('page/news/page5/page5.html');
+	window.history.pushState($(this).attr('href'), document.title, $(this).attr('href'));
+	eventObject.preventDefault();
+	
+});		
+</script>
